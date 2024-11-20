@@ -53,6 +53,7 @@ public class AlquilerVehiculosController {
 
     }
     // Para listar todos los vehículos alquilados
+    @GetMapping("/alquilados")
     public List<AbstractVehiculo> listarVehiculosAlquilados() {
         return gestionVehiculoService.listarVehiculosAlquilados();
     }
